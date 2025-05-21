@@ -49,7 +49,11 @@ The `find()` method returns the first element in the array that matches a condit
 ### Example
 
 ```js
-const users = [ { id: 1, name: "Alice", age: 21 }, { id: 2, name: "Bobby", age: 27 }, { id: 3, name: "Sammy", age: 4 } ];
+const users = [ 
+    { id: 1, name: "Alice", age: 21 }, 
+    { id: 2, name: "Bobby", age: 27 }, 
+    { id: 3, name: "Sammy", age: 4 } 
+];
 const userId = 2;
 const foundUser = users.find((user) => { return user.id === userId });
 // user is whatever name I decided to give to the element I'll receive in the function, can be anything, 
@@ -80,7 +84,11 @@ The `findIndex()` method returns the index of the first element in the array tha
 ### Example
 
 ```js
-const users = [ { id: 1, name: "Alice", age: 21 }, { id: 2, name: "Bobby", age: 27 }, { id: 3, name: "Sammy", age: 4 } ];
+const users = [ 
+    { id: 1, name: "Alice", age: 21 }, 
+    { id: 2, name: "Bobby", age: 27 }, 
+    { id: 3, name: "Sammy", age: 4 } 
+];
 const userId = 2;
 const userIndex = users.find((user) => { return user.id === userId });
 // user is whatever name I decided to give to the element I'll receive in the function, can be anything, 
@@ -111,7 +119,7 @@ The `filter()` method returns a new array with the elements whose iterations ret
 ### Example #1
 
 ```js
-const ages = [12, 25, 17, 30];
+const ages = [ 12, 25, 17, 30 ];
 const adultAges = ages.filter((age) => { return age >= 18 });
 // age is whatever name I decided to give to the element I'll receive in the function, can be anything, 
 // I gave it age since I know its going to be a number representing an age
@@ -134,7 +142,11 @@ console.log(adultsAges); // [25, 30]
 ### Example #2
 
 ```js
-const users = [ { id: 1, name: "Alice", age: 21 }, { id: 2, name: "Bobby", age: 27 }, { id: 3, name: "Sammy", age: 4 } ];
+const users = [ 
+    { id: 1, name: "Alice", age: 21 }, 
+    { id: 2, name: "Bobby", age: 27 }, 
+    { id: 3, name: "Sammy", age: 4 } 
+];
 const adultUsers = ages.filter((user) => { return user.age >= 18 });
 // user is whatever name I decided to give to the element I'll receive in the function, can be anything, 
 // I gave it user since I know its going to be an object representing a user
