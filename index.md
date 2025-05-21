@@ -95,8 +95,8 @@ const userIndex = users.find((user) => { return user.id === userId });
 // I gave it user since I know its going to be an object representing a user
 
 // The array 'users' has 3 elements, therefore we will have 3 iterations in our function, once for each element, 
-// as soon as one of the iterations returns true, the index of the element of that iteration is assigned your variable 
-// and we stop iterating
+// as soon as one of the iterations returns true, the index of the element of that iteration is assigned 
+// your variable and we stop iterating
 
 // ITERATION 1 - The element will be '{ id: 1, name: "Alice", age: 21 }'
 // Here, user.id is '1' and userId is 2, therefore the comparison returns false,
