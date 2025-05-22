@@ -1,5 +1,7 @@
 A compilation of usefull notes, examples and reminders.
 
+# Array Functions
+
 ## `map`
 
 The `map()` method transforms each element of an array and returns a new array with the new values. Use `map()` when you have an array of elements, and you want to get a new array with something else based on those elements.
@@ -26,7 +28,7 @@ console.log(doubled); // [2, 4, 6]
 
 ```js
 const users = [ { id: 1, name: "Alice", age: 21 }, { id: 2, name: "Bobby", age: 27 } ];
-const names = numbers.map((user) => { return user.name });
+const names = users.map((user) => { return user.name });
 // user is whatever name I decided to give to the element I'll receive in the function, can be anything, 
 // I gave it user since I know its going to be an object representing a user
 
